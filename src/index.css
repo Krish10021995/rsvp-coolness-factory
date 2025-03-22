@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto+Mono&display=swap');
 
 @tailwind base;
@@ -123,6 +122,112 @@
   .divider {
     @apply w-24 h-px my-8 bg-wedding-accent/30 mx-auto;
   }
+
+  /* Rose and floral decorative elements */
+  .floral-bg-1 {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' fill='none'%3E%3Cpath d='M50 0C40 15 30 25 15 30C25 40 30 45 30 50C30 55 25 60 15 70C30 75 40 85 50 100C60 85 70 75 85 70C75 60 70 55 70 50C70 45 75 40 85 30C70 25 60 15 50 0Z' fill='%23fadadd'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .floral-bg-2 {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' fill='none'%3E%3Cpath d='M50 10C45 20 35 25 25 25C30 35 32 45 30 50C28 55 25 65 20 75C30 72 45 75 50 90C55 75 70 72 80 75C75 65 72 55 70 50C68 45 70 35 75 25C65 25 55 20 50 10Z' fill='%23f8bbd0'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .floral-bg-3 {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none'%3E%3Cpath d='M60 10C50 25 40 30 20 30C35 45 38 55 35 60C32 65 25 75 15 90C40 85 55 90 60 110C65 90 80 85 105 90C95 75 88 65 85 60C82 55 85 45 100 30C80 30 70 25 60 10Z' fill='%23fadadd'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .floral-element-small {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Ccircle cx='24' cy='24' r='8' fill='%23fadadd'/%3E%3Cpath d='M24 4C22 10 18 14 12 16C18 18 22 22 24 28C26 22 30 18 36 16C30 14 26 10 24 4Z' fill='%23f8bbd0'/%3E%3Cpath d='M24 44C26 38 30 34 36 32C30 30 26 26 24 20C22 26 18 30 12 32C18 34 22 38 24 44Z' fill='%23f8bbd0'/%3E%3Cpath d='M4 24C10 26 14 30 16 36C18 30 22 26 28 24C22 22 18 18 16 12C14 18 10 22 4 24Z' fill='%23f8bbd0'/%3E%3Cpath d='M44 24C38 22 34 18 32 12C30 18 26 22 20 24C26 26 30 30 32 36C34 30 38 26 44 24Z' fill='%23f8bbd0'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .floral-element-small-2 {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Ccircle cx='24' cy='24' r='6' fill='%23fadadd'/%3E%3Cpath d='M24 8C22 12 18 16 14 18C18 20 22 24 24 28C26 24 30 20 34 18C30 16 26 12 24 8Z' fill='%23f8bbd0'/%3E%3Cpath d='M24 40C26 36 30 32 34 30C30 28 26 24 24 20C22 24 18 28 14 30C18 32 22 36 24 40Z' fill='%23f8bbd0'/%3E%3Cpath d='M8 24C12 26 16 30 18 34C20 30 24 26 28 24C24 22 20 18 18 14C16 18 12 22 8 24Z' fill='%23f8bbd0'/%3E%3Cpath d='M40 24C36 22 32 18 30 14C28 18 24 22 20 24C24 26 28 30 30 34C32 30 36 26 40 24Z' fill='%23f8bbd0'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .corner-rose-top-left {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' fill='none'%3E%3Cpath d='M20 20C10 30 5 40 5 50C15 45 25 45 30 50C35 55 35 65 30 80C40 75 50 75 60 80C70 70 75 60 70 50C65 40 55 35 40 40C30 30 25 20 20 20Z' fill='%23FFC0CB'/%3E%3Ccircle cx='30' cy='50' r='5' fill='%23FFECF2'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  
+  .corner-rose-bottom-right {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none'%3E%3Cpath d='M100 100C110 90 115 80 115 70C105 75 95 75 90 70C85 65 85 55 90 40C80 45 70 45 60 40C50 50 45 60 50 70C55 80 65 85 80 80C90 90 95 100 100 100Z' fill='%23FFC0CB'/%3E%3Ccircle cx='90' cy='70' r='5' fill='%23FFECF2'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  
+  .corner-rose-bottom-left {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none'%3E%3Cpath d='M20 100C10 90 5 80 5 70C15 75 25 75 30 70C35 65 35 55 40 40C50 45 60 45 70 40C80 50 85 60 80 70C75 80 65 85 50 80C40 90 30 100 20 100Z' fill='%23FFC0CB'/%3E%3Ccircle cx='30' cy='70' r='5' fill='%23FFECF2'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+  
+  .rose-accent {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Cpath d='M24 8C20 12 16 14 12 14C16 18 18 22 18 24C18 26 16 30 12 34C16 34 20 36 24 40C28 36 32 34 36 34C32 30 30 26 30 24C30 22 32 18 36 14C32 14 28 12 24 8Z' fill='%23FF6B81'/%3E%3Ccircle cx='24' cy='24' r='4' fill='%23FFECF2'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .rose-small, .rose-small-2 {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M16 4C14 6 12 8 8 8C12 10 14 14 14 16C14 18 12 22 8 24C12 24 14 26 16 30C18 26 20 24 24 24C20 22 18 18 18 16C18 14 20 10 24 8C20 8 18 6 16 4Z' fill='%23FF97A8'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23FFECF2'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .rose-tiny {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M8 2C7 3 6 4 4 4C6 5 7 7 7 8C7 9 6 11 4 12C6 12 7 13 8 15C9 13 10 12 12 12C10 11 9 9 9 8C9 7 10 5 12 4C10 4 9 3 8 2Z' fill='%23FF97A8'/%3E%3Ccircle cx='8' cy='8' r='1.5' fill='%23FFECF2'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .rose-detail, .rose-rsvp {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64' fill='none'%3E%3Cpath d='M32 8C28 14 22 18 16 20C22 22 28 28 30 32C32 36 30 44 24 50C30 48 38 50 42 56C46 50 54 48 60 50C54 44 52 36 54 32C56 28 62 22 68 20C62 18 56 14 52 8C48 14 42 18 38 16C34 14 36 8 32 8Z' fill='%23FFC0CB'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23FFECF2'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .flower-divider, .flower-divider-2, .flower-divider-3 {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Ccircle cx='12' cy='12' r='3' fill='%23FF97A8'/%3E%3Cpath d='M12 3C11 6 9 8 6 9C9 10 11 12 12 15C13 12 15 10 18 9C15 8 13 6 12 3Z' fill='%23FFD1DC'/%3E%3Cpath d='M12 21C13 18 15 16 18 15C15 14 13 12 12 9C11 12 9 14 6 15C9 16 11 18 12 21Z' fill='%23FFD1DC'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .floral-corner-left, .floral-corner-right {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none'%3E%3Cpath d='M60 10C48 30 36 40 18 40C36 50 42 65 36 80C30 95 18 105 6 110C24 105 42 110 54 125C66 110 84 105 102 110C90 105 78 95 72 80C66 65 72 50 90 40C72 40 60 30 48 10' stroke='%23FFC0CB' stroke-width='2'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .footer-flower {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40' viewBox='0 0 120 40' fill='none'%3E%3Cpath d='M60 10C55 4 50 2 40 5C50 8 55 15 60 20C65 15 70 8 80 5C70 2 65 4 60 10Z' fill='%23FFC0CB'/%3E%3Cpath d='M20 15C18 12 15 11 10 12C15 13 18 16 20 19C22 16 25 13 30 12C25 11 22 12 20 15Z' fill='%23FFC0CB'/%3E%3Cpath d='M100 15C98 12 95 11 90 12C95 13 98 16 100 19C102 16 105 13 110 12C105 11 102 12 100 15Z' fill='%23FFC0CB'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 @layer utilities {
@@ -134,3 +239,4 @@
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
+

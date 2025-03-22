@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import RSVPForm from "@/components/RSVPForm";
@@ -12,9 +11,16 @@ const Index = () => {
 
   return (
     <div className="min-h-screen w-full overflow-x-hidden">
+      <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-0 overflow-hidden">
+        <div className="absolute -top-20 -right-20 w-64 h-64 md:w-96 md:h-96 opacity-20 rotate-12 floral-bg-1"></div>
+        <div className="absolute top-1/3 -left-20 w-52 h-52 md:w-80 md:h-80 opacity-15 -rotate-12 floral-bg-2"></div>
+        <div className="absolute -bottom-20 -right-20 w-64 h-64 md:w-72 md:h-72 opacity-20 rotate-45 floral-bg-3"></div>
+        <div className="absolute bottom-1/4 left-0 w-24 h-24 opacity-10 rotate-12 floral-element-small"></div>
+        <div className="absolute top-1/2 right-0 w-20 h-20 opacity-10 -rotate-12 floral-element-small-2"></div>
+      </div>
+      
       <Navbar />
       
-      {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center pt-20">
         <FadeIn delay={100}>
           <div className="absolute top-0 left-0 w-full h-full">
@@ -25,13 +31,16 @@ const Index = () => {
           </div>
         </FadeIn>
         
+        <div className="absolute top-0 left-0 w-32 h-32 md:w-40 md:h-40 opacity-30 corner-rose-top-left"></div>
+        
         <FadeIn>
           <p className="text-sm uppercase tracking-widest mb-4 text-foreground/70">Save the date</p>
         </FadeIn>
         
         <FadeIn delay={200}>
-          <h1 className="heading-xl mb-4">
+          <h1 className="heading-xl mb-4 relative">
             Anna <span className="subtle-accent">&</span> Ben
+            <div className="absolute -right-8 top-0 w-16 h-16 opacity-80 rose-accent"></div>
           </h1>
         </FadeIn>
         
@@ -42,8 +51,10 @@ const Index = () => {
         </FadeIn>
         
         <FadeIn delay={400}>
-          <div className="glass-panel py-4 px-8 rounded-lg mb-8">
+          <div className="glass-panel py-4 px-8 rounded-lg mb-8 relative">
+            <div className="absolute -left-4 -top-3 w-10 h-10 opacity-80 rose-small"></div>
             <time className="font-serif text-2xl">June 15, 2024</time>
+            <div className="absolute -right-4 -bottom-3 w-10 h-10 opacity-80 rose-small-2"></div>
           </div>
         </FadeIn>
         
@@ -67,16 +78,21 @@ const Index = () => {
             </div>
           </FadeIn>
         </div>
+        
+        <div className="absolute bottom-0 right-0 w-36 h-36 md:w-48 md:h-48 opacity-30 corner-rose-bottom-right"></div>
       </section>
       
-      {/* Details Section */}
-      <section id="details" className="py-24 px-6">
+      <section id="details" className="py-24 px-6 relative">
+        <div className="absolute top-0 right-0 w-24 h-24 opacity-20 rose-detail"></div>
+        
         <div className="container mx-auto max-w-5xl">
           <FadeIn>
             <div className="text-center mb-16">
               <p className="text-sm uppercase tracking-widest mb-2 text-foreground/70">Wedding</p>
               <h2 className="heading-lg">Event Details</h2>
-              <div className="divider"></div>
+              <div className="divider relative">
+                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 opacity-80 flower-divider"></div>
+              </div>
             </div>
           </FadeIn>
           
@@ -129,14 +145,18 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Schedule Section */}
-      <section id="schedule" className="py-24 px-6 bg-wedding-primary/10">
+      <section id="schedule" className="py-24 px-6 bg-wedding-primary/10 relative">
+        <div className="absolute top-10 left-10 w-32 h-32 opacity-15 floral-corner-left"></div>
+        <div className="absolute bottom-10 right-10 w-32 h-32 opacity-15 floral-corner-right"></div>
+        
         <div className="container mx-auto max-w-4xl">
           <FadeIn>
             <div className="text-center mb-16">
               <p className="text-sm uppercase tracking-widest mb-2 text-foreground/70">Timeline</p>
               <h2 className="heading-lg">Wedding Day Schedule</h2>
-              <div className="divider"></div>
+              <div className="divider relative">
+                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 opacity-80 flower-divider-2"></div>
+              </div>
             </div>
           </FadeIn>
           
@@ -250,14 +270,18 @@ const Index = () => {
         </div>
       </section>
       
-      {/* RSVP Section */}
-      <section id="rsvp" className="py-24 px-6">
+      <section id="rsvp" className="py-24 px-6 relative">
+        <div className="absolute bottom-0 left-0 w-40 h-40 opacity-25 corner-rose-bottom-left"></div>
+        <div className="absolute top-10 right-10 w-24 h-24 opacity-20 rose-rsvp"></div>
+        
         <div className="container mx-auto">
           <FadeIn>
             <div className="text-center mb-16">
               <p className="text-sm uppercase tracking-widest mb-2 text-foreground/70">Please Respond</p>
               <h2 className="heading-lg">RSVP</h2>
-              <div className="divider"></div>
+              <div className="divider relative">
+                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 opacity-80 flower-divider-3"></div>
+              </div>
               <p className="text-foreground/70 max-w-xl mx-auto">
                 We would be honored to have you join us on our special day. 
                 Please let us know if you can attend by May 15, 2024.
@@ -273,13 +297,17 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Footer */}
-      <footer className="py-12 px-6 text-center text-foreground/60">
+      <footer className="py-12 px-6 text-center text-foreground/60 relative">
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-12 opacity-30 footer-flower"></div>
+        
         <FadeIn>
           <div className="container mx-auto">
             <div className="flex justify-center items-center mb-6">
+              <div className="w-5 h-5 opacity-80 rose-tiny mr-2"></div>
               <Heart className="h-5 w-5 text-wedding-accent mr-2" />
               <h3 className="font-serif text-xl">Anna & Ben</h3>
+              <Heart className="h-5 w-5 text-wedding-accent ml-2" />
+              <div className="w-5 h-5 opacity-80 rose-tiny ml-2"></div>
             </div>
             <p className="max-w-md mx-auto mb-8">
               Thank you for being part of our love story. We can't wait to celebrate with you!

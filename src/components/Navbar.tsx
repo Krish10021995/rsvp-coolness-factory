@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
           className="font-serif text-lg md:text-xl text-foreground transition-opacity hover:opacity-80 relative"
         >
           <span className="relative">
-            A <span className="text-wedding-accent">&</span> B
+            P <span className="text-wedding-accent">&</span> K
             <div className="absolute -top-2 -right-4 w-5 h-5 opacity-70 rose-tiny"></div>
           </span>
         </a>

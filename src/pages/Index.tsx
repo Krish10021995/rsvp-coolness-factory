@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import RSVPForm from "@/components/RSVPForm";
@@ -6,7 +7,7 @@ import { Calendar, MapPin, Clock, Heart } from "lucide-react";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Anna & Ben Wedding | RSVP";
+    document.title = "Payel & Krishnendu Wedding | RSVP";
   }, []);
 
   return (
@@ -39,7 +40,7 @@ const Index = () => {
         
         <FadeIn delay={200}>
           <h1 className="heading-xl mb-4 relative">
-            Anna <span className="subtle-accent">&</span> Ben
+            Payel <span className="subtle-accent">&</span> Krishnendu
             <div className="absolute -right-8 top-0 w-16 h-16 opacity-80 rose-accent"></div>
           </h1>
         </FadeIn>
@@ -53,7 +54,7 @@ const Index = () => {
         <FadeIn delay={400}>
           <div className="glass-panel py-4 px-8 rounded-lg mb-8 relative">
             <div className="absolute -left-4 -top-3 w-10 h-10 opacity-80 rose-small"></div>
-            <time className="font-serif text-2xl">June 15, 2024</time>
+            <time className="font-serif text-2xl">December 5-7, 2025</time>
             <div className="absolute -right-4 -bottom-3 w-10 h-10 opacity-80 rose-small-2"></div>
           </div>
         </FadeIn>
@@ -102,9 +103,11 @@ const Index = () => {
                 <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-wedding-primary/30">
                   <Calendar className="h-8 w-8 text-foreground/70" />
                 </div>
-                <h3 className="heading-md mb-4">The Date</h3>
-                <p className="text-foreground/70 mb-2">Saturday</p>
-                <p className="text-xl font-medium">June 15, 2024</p>
+                <h3 className="heading-md mb-4">The Dates</h3>
+                <p className="text-foreground/70 mb-2">Wedding Ceremony</p>
+                <p className="text-xl font-medium">December 5, 2025</p>
+                <p className="text-foreground/70 mt-4 mb-2">Reception</p>
+                <p className="text-xl font-medium">December 7, 2025</p>
               </div>
             </FadeIn>
             
@@ -115,10 +118,10 @@ const Index = () => {
                 </div>
                 <h3 className="heading-md mb-4">The Venue</h3>
                 <p className="text-foreground/70 mb-2">Celebration at</p>
-                <p className="text-xl font-medium">Rosewood Gardens</p>
+                <p className="text-xl font-medium">Pramanik Bhaban</p>
                 <p className="text-foreground/70 mt-2 text-sm">
-                  123 Blossom Lane<br />
-                  San Francisco, CA
+                  Purbakola, Naikuri<br />
+                  West Bengal, India
                 </p>
               </div>
             </FadeIn>
@@ -132,11 +135,11 @@ const Index = () => {
                 <div className="space-y-3">
                   <div>
                     <p className="text-foreground/70">Ceremony</p>
-                    <p className="font-medium">3:00 PM</p>
+                    <p className="font-medium">7:00 PM</p>
                   </div>
                   <div>
-                    <p className="text-foreground/70">Reception</p>
-                    <p className="font-medium">5:30 PM</p>
+                    <p className="text-foreground/70">Dinner</p>
+                    <p className="font-medium">7:00 PM</p>
                   </div>
                 </div>
               </div>
@@ -169,13 +172,13 @@ const Index = () => {
                   <div className="flex items-center">
                     <div className="flex-grow text-right mr-8 md:mr-12 pr-4">
                       <h3 className="font-serif text-xl">Guest Arrival</h3>
-                      <p className="text-foreground/60 mt-1">Please arrive 30 minutes before the ceremony</p>
+                      <p className="text-foreground/60 mt-1">Please arrive for the ceremony</p>
                     </div>
                     <div className="z-10 flex items-center justify-center w-10 h-10 rounded-full bg-wedding-primary border-4 border-background">
                       <span className="font-mono text-sm">1</span>
                     </div>
                     <div className="flex-grow ml-8 md:ml-12 pl-4">
-                      <time className="font-mono text-xl">2:30 PM</time>
+                      <time className="font-mono text-xl">5:00 PM</time>
                     </div>
                   </div>
                 </div>
@@ -186,13 +189,13 @@ const Index = () => {
                   <div className="flex items-center">
                     <div className="flex-grow text-right mr-8 md:mr-12 pr-4">
                       <h3 className="font-serif text-xl">Ceremony</h3>
-                      <p className="text-foreground/60 mt-1">Exchange of vows in the garden</p>
+                      <p className="text-foreground/60 mt-1">Traditional wedding ceremony</p>
                     </div>
                     <div className="z-10 flex items-center justify-center w-10 h-10 rounded-full bg-wedding-secondary border-4 border-background">
                       <span className="font-mono text-sm">2</span>
                     </div>
                     <div className="flex-grow ml-8 md:ml-12 pl-4">
-                      <time className="font-mono text-xl">3:00 PM</time>
+                      <time className="font-mono text-xl">7:00 PM</time>
                     </div>
                   </div>
                 </div>
@@ -209,7 +212,7 @@ const Index = () => {
                       <span className="font-mono text-sm">3</span>
                     </div>
                     <div className="flex-grow ml-8 md:ml-12 pl-4">
-                      <time className="font-mono text-xl">4:00 PM</time>
+                      <time className="font-mono text-xl">7:00 PM</time>
                     </div>
                   </div>
                 </div>
@@ -219,14 +222,14 @@ const Index = () => {
                 <div className="relative">
                   <div className="flex items-center">
                     <div className="flex-grow text-right mr-8 md:mr-12 pr-4">
-                      <h3 className="font-serif text-xl">Reception & Dinner</h3>
-                      <p className="text-foreground/60 mt-1">Celebration with food, speeches, and dancing</p>
+                      <h3 className="font-serif text-xl">Dinner</h3>
+                      <p className="text-foreground/60 mt-1">A delightful feast to celebrate</p>
                     </div>
                     <div className="z-10 flex items-center justify-center w-10 h-10 rounded-full bg-wedding-primary border-4 border-background">
                       <span className="font-mono text-sm">4</span>
                     </div>
                     <div className="flex-grow ml-8 md:ml-12 pl-4">
-                      <time className="font-mono text-xl">5:30 PM</time>
+                      <time className="font-mono text-xl">7:00 PM</time>
                     </div>
                   </div>
                 </div>
@@ -243,7 +246,7 @@ const Index = () => {
                       <span className="font-mono text-sm">5</span>
                     </div>
                     <div className="flex-grow ml-8 md:ml-12 pl-4">
-                      <time className="font-mono text-xl">8:00 PM</time>
+                      <time className="font-mono text-xl">9:00 PM</time>
                     </div>
                   </div>
                 </div>
@@ -284,7 +287,7 @@ const Index = () => {
               </div>
               <p className="text-foreground/70 max-w-xl mx-auto">
                 We would be honored to have you join us on our special day. 
-                Please let us know if you can attend by May 15, 2024.
+                Please let us know if you can attend by November 5, 2025.
               </p>
             </div>
           </FadeIn>
@@ -305,7 +308,7 @@ const Index = () => {
             <div className="flex justify-center items-center mb-6">
               <div className="w-5 h-5 opacity-80 rose-tiny mr-2"></div>
               <Heart className="h-5 w-5 text-wedding-accent mr-2" />
-              <h3 className="font-serif text-xl">Anna & Ben</h3>
+              <h3 className="font-serif text-xl">Payel & Krishnendu</h3>
               <Heart className="h-5 w-5 text-wedding-accent ml-2" />
               <div className="w-5 h-5 opacity-80 rose-tiny ml-2"></div>
             </div>
@@ -313,7 +316,7 @@ const Index = () => {
               Thank you for being part of our love story. We can't wait to celebrate with you!
             </p>
             <p className="text-sm">
-              &copy; {new Date().getFullYear()} · Wedding of Anna & Ben · All rights reserved
+              &copy; {new Date().getFullYear()} · Wedding of Payel & Krishnendu · All rights reserved
             </p>
           </div>
         </FadeIn>
